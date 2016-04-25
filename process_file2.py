@@ -47,6 +47,7 @@ def main():
     if command == "read":
         abs_path = os.path.join(directory, filename)
         check_file(abs_path)
-
+    else:
+        print("Command not found")
 if __name__=='__main__':
     main()
