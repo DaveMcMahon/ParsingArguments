@@ -28,7 +28,7 @@ def check_file(file_str):
             with open(file_str, "r") as fh:
                 for line in fh:
                     print(line.rstrip('\n'))
-        except FileNotFoundError:
+        except IOError:
             logging.debug("Issue opening/locating {!r}".format(file_str))
     else:
         print("{!r} does not exist".format(file_str))
