@@ -5,7 +5,7 @@ import sys
 import logging
 import argparse
 
-logging.basicConfig(filename="output.log",  level=logging.DEBUG)
+logging.basicConfig(filename="output.log",  level=logging.DEBUG) 
 
 def make_parser():
     desc = 'Command line parser'
